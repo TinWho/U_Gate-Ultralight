@@ -10,7 +10,7 @@
  * LICENSE:            GPL-2.0-or-later (https://gnu.org)
  * ==========================================================================
  * DESIGN ARCHITECTURE: LEAD PRODUCT DIRECTOR & SYSTEM SPEC: TIN WHO
- * AI-generated / AI-assisted template code execution provided AS-IS.
+ * AI-generated / AI-assisted code provided AS-IS.
  * User assumes all risks and environmental responsibility for use.
  * ==========================================================================
  */
