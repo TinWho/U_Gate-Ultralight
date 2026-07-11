@@ -16,16 +16,15 @@
 
 
 
-/*
 ============================================================================
-ULTRALIGHT U_GATE — CORE SPECIFICATION ALPHA BUILD (GPLv2+)
+ULTRALIGHT-U_GATE FOR bbPRESS — CORE SPECIFICATION PRODUCTION BUILD (GPLv2+)
 ============================================================================
-The Ultralight U_Gate is a dynamic architectural translation layer.
+Ultralight-U_Gate is a high-performance architectural translation layer.
 It bridges your backend database with your front-end presentation layer, 
 translating raw values inside the highly indexed `wp_usermeta` table into 
-instant conditional layout tracks [INDEX, INDEX].
+instant conditional layout tracks and pinpoint location/time constraints.
 
-THE 10 STRUCTURAL CORE CLASSIFICATIONS MATRIX:
+THE 11 STRUCTURAL CORE CLASSIFICATIONS MATRIX:
 ----------------------------------------------------------------------------
  1. USER            -> Authenticates core profile login state.
  2. GROUP           -> Tracks clearing arrays and roles ( l="vip, !banned" ).
@@ -37,17 +36,19 @@ THE 10 STRUCTURAL CORE CLASSIFICATIONS MATRIX:
  8. VARIABLE NAMES  -> Pass-through engine: processes ANY user meta row value automatically.
  9. FORUM           -> Fences layout blocks/access straight to single or multiple comma-separated Forum IDs.
  10. TOPIC          -> Fences layout blocks/access straight to single or multiple comma-separated Topic IDs.
+ 11. UNTIL          -> Enforces automatic calendar expiration clock constraints (until="YYYY-MM-DD").
 ============================================================================
-
 
 CORE PARAMETER OPERATOR MODIFIERS:
 ----------------------------------------------------------------------------
- - Minimum Floor Keyword (e.g. p="min:10") : Checked as a minimum floor threshold limit (Score >= 10).
- - Maximum Ceiling Keyword (e.g. p="max:10"): Checked as a maximum ceiling threshold limit (Score <= 10).
- - Exact Match Prefix (e.g. your_db_name="=10"): Checked as an exact value match (= 10).
+ - Minimum Floor Keyword (e.g. p="min:10")  : Checked as a minimum floor threshold limit (Score >= 10).
+ - Maximum Ceiling Keyword (e.g. p="max:10") : Checked as a maximum ceiling threshold limit (Score <= 10).
+ - Exact Match Prefix (e.g. your_db_name="=10") : Checked as an exact value match (= 10).
  - Multi-ID String List (e.g. topic="85,92") : Checked via array lookup across single or multiple text list IDs.
- - Raw Integer Fallback (e.g. p="10")       : Checked as a minimum floor default fallback (Score >= 10).
+ - Time Expiration String (e.g. until="2026-07-01") : Evaluated on page load to natively clear or lock content.
+ - Raw Integer Fallback (e.g. p="10")        : Checked as a minimum floor default fallback (Score >= 10).
 ----------------------------------------------------------------------------
+
 
 
 INLINE STRUCTURAL EXACT MATCHING SPECIFICATION RECIPE:
