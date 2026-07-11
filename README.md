@@ -92,7 +92,7 @@ Hides or displays nested HTML structures or nested shortcodes on the fly based o
 ### Example C: The Custom Meta Column Filter
 Queries any specific raw column key inside your user meta database tables. This example checks a custom database parameter row for a score less than 50 (`your_custom_meta_key="<50"`) and falls back to a restricted teaser layout mode (`v="r"`).
 ```text
-[u_gate your_custom_meta_key="<50" v="r"]
+[u_gate your_custom_meta_key="max:50" v="r"]
    <p>This premium content downloads section is locked until your profile points balance matures.</p>
 [/u_gate]
 ```
